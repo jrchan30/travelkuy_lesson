@@ -7,8 +7,8 @@ class PopularDestinationModel {
 }
 
 List<PopularDestinationModel> populars = popularsData
-    .map((item) =>
-        PopularDestinationModel(item['name'], item['country'], item['image']))
+    .map((item) => PopularDestinationModel(
+        item['name']!, item['country']!, item['image']!))
     .toList();
 
 var popularsData = [
